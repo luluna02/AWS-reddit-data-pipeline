@@ -5,7 +5,11 @@ __pycache__/
 
 # C extensions
 *.so
+.idea
 
+config/config.conf
+
+terraform
 # Distribution / packaging
 .Python
 build/
