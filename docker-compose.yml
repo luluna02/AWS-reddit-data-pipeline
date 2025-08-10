@@ -6,6 +6,7 @@ x-airflow-common:
   image: custom-airflow:2.10.5-python3.9
   env_file:
     - airflow.env
+    - secrets.env
   volumes:
     - ./config:/opt/airflow/config
     - ./dags:/opt/airflow/dags

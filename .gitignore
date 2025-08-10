@@ -9,6 +9,15 @@ __pycache__/
 
 config/config.conf
 
+Infra-terraform/.terraform
+Infra-terraform/.terraform.lock.hcl
+Infra-terraform/terraform.tfstate
+Infra-terraform/terraform.tfvars
+
+airflow.env
+secrets.env
+logs
+
 logs
 
 terraform
