@@ -1,3 +1,4 @@
 # AWS-reddit-data-pipeline
 
-<img width="4096" height="4096" alt="pngwing com" src="https://github.com/user-attachments/assets/03bdbddc-bb10-48a0-b4f9-8ca0e1b3ab97" />
+
+<img width="1069" height="465" alt="Screenshot 2025-08-10 at 12 02 08 PM" src="https://github.com/user-attachments/assets/b8ef0a1c-095e-472b-9c43-e1804ed7be90" />
