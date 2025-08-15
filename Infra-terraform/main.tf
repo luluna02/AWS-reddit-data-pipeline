@@ -54,3 +54,10 @@ resource "aws_iam_user_policy" "lina_s3_access" {
   })
 }
 
+
+resource "aws_s3_object" "transformed_prefix" {
+  bucket  = var.bucket_name       # Use the main bucket
+  key     = "transformed/"        # The folder inside the bucket
+  content = ""
+}
+
