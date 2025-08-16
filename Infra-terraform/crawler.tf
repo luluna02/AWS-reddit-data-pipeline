@@ -1,5 +1,5 @@
 # Glue Database (needed for tables)
-resource "aws_glue_catalog_database" "reddit_db" {
+data "aws_glue_catalog_database" "reddit_db" {
   name = "reddit_db"
 }
 
