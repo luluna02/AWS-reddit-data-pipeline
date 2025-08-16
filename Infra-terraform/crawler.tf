@@ -3,6 +3,10 @@ resource "aws_glue_catalog_database" "reddit_db" {
   name = "reddit_db"
 }
 
+resource "aws_glue_catalog_database" "reddit_dbtest" {
+  name = "reddit_dbtest"
+}
+
 # Glue Crawlers to create tables from S3
 # Crawler for raw data
 resource "aws_glue_crawler" "raw_crawler" {
