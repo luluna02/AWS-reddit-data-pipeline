@@ -35,4 +35,12 @@ jobs:
         run: terraform plan -no-color
 
       - name: Terraform Apply
-        run: terraform apply -auto-approve
+        run: |
+          if terraform apply -auto-approve; then
+            echo "Apply succeeded"
+          else
+            echo "Apply failed, attempting to import existing resources"
+            terraform import aws_iam_role.glue_role reddit_glue_role || true
+            terraform import aws_s3_bucket.my_bucket reddit-pipeline1234 || true
+            terraform apply -auto-approve
+          fi
