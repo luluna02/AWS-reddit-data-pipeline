@@ -47,3 +47,9 @@ resource "aws_s3_object" "transformed_prefix" {
   content = ""
 }
 
+resource "aws_s3_object" "athena_script" {
+  bucket  = var.bucket_name       # Use the main bucket
+  key     = "athena_script/"        # The folder inside the bucket
+  content = ""
+}
+
