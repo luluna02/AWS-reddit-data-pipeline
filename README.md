@@ -15,13 +15,7 @@ This project implements a serverless, event-driven ELT data pipeline on AWS for 
 7. **CI/CD** – **GitHub Actions** automates deployments.  
 8. **Metadata & Caching** – **PostgreSQL** stores Airflow metadata, **Redis** used for caching.
 
-**Screenshots:  
-- `images/s3-lambda.png` → S3 trigger to Lambda  
-- `images/glue.png` → Glue job execution  
-- `images/athena.png` → Athena query example  
-- `images/redshift.png` → Redshift table after load  
-- `images/airflow.png` → Airflow DAG view  
-
+**See the screenshots section at the bottom of this README.
 
 ## How to run the pipeline
 
@@ -73,6 +67,27 @@ In Airflow, either schedule the DAG or trigger it manually:
 
 Ingests Reddit data → Stores in S3 → Triggers Glue through Lambda → Loads into Redshift → Queryable in Athena.
 
+## Screenshots
+
+- DAG
+  
+<img width="1234" height="464" alt="Screenshot 2025-08-20 at 9 08 49 PM" src="https://github.com/user-attachments/assets/9f54064a-10bc-496f-821f-e8b5230d50aa" />
+
+- S3
+  
+<img width="966" height="493" alt="Screenshot 2025-08-20 at 9 09 34 PM" src="https://github.com/user-attachments/assets/fca068f0-1e7a-48b2-b19c-b571cb0b81b6" />
+
+- Glue
+  
+<img width="1239" height="526" alt="Screenshot 2025-08-20 at 9 10 12 PM" src="https://github.com/user-attachments/assets/2d71162b-bdb6-4b90-9041-8f98da26db88" />
+
+- Lambda
+  
+<img width="1238" height="487" alt="Screenshot 2025-08-20 at 9 11 01 PM" src="https://github.com/user-attachments/assets/c08eb8c0-f337-41c8-bb6b-3545311e7706" />
+
+- Redshift
+  
+<img width="1239" height="619" alt="Screenshot 2025-08-20 at 9 11 13 PM" src="https://github.com/user-attachments/assets/7e88956b-ef79-4d4f-a2cf-f534bcabff62" />
 
 
 
