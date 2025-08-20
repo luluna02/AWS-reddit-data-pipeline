@@ -15,7 +15,7 @@ This project implements a serverless, event-driven ELT data pipeline on AWS for 
 7. **CI/CD** – **GitHub Actions** automates deployments.  
 8. **Metadata & Caching** – **PostgreSQL** stores Airflow metadata, **Redis** used for caching.
 
-**See the screenshots section at the bottom of this README.
+**See the screenshots section at the bottom of this README.**
 
 ## How to run the pipeline
 
