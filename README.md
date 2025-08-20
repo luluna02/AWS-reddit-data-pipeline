@@ -4,5 +4,18 @@ This project implements a serverless, event-driven ELT data pipeline on AWS for 
 
 <img width="1004" height="513" alt="Screenshot 2025-08-20 at 4 15 16 PM" src="https://github.com/user-attachments/assets/9e6edba9-0d05-4047-a30c-918fd4745db0" />
 
+<img width="853" height="491" alt="Screenshot 2025-08-20 at 8 18 26 PM" src="https://github.com/user-attachments/assets/9d95c9a8-cb10-4c27-a606-b2f261af224e" />
+
+## Architecture 
+
+1. **Reddit Data Extraction** – Data ingested via Reddit API through Airflow dags for orchestration and stored in **S3 (Data Lake)**.  
+2. **Event-Driven Processing** – S3 triggers a **Lambda function** when a file is uploaded in the raw data bucket, which invokes **Glue jobs**.  
+3. **Transformation & Cataloging** – **AWS Glue** processes and catalogs data into the **Glue Data Catalog** and stores the transormed data in a transformed bucket.  
+4. **Querying & Analytics** – Data accessible via **Athena** for ad-hoc queries and loaded into **Redshift** as the Data Warehouse.  
+5. **Workflow Orchestration** – **Airflow** (running in Docker) schedules jobs and manages dependencies.  
+6. **Infrastructure as Code** – **Terraform** provisions AWS resources.  
+7. **CI/CD** – **GitHub Actions** automates deployments.  
+8. **Metadata & Caching** – **PostgreSQL** stores Airflow metadata, **Redis** used for caching. 
+
 
 
