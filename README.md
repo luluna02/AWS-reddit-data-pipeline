@@ -87,7 +87,8 @@ Ingests Reddit data → Stores in S3 → Triggers Glue through Lambda → Loads 
 
 - Redshift
   
-<img width="1239" height="619" alt="Screenshot 2025-08-20 at 9 11 13 PM" src="https://github.com/user-attachments/assets/7e88956b-ef79-4d4f-a2cf-f534bcabff62" />
+<img width="1239" height="619" alt="Screenshot 2025-08-21 at 3 27 11 PM" src="https://github.com/user-attachments/assets/31006b3f-377f-44d9-a071-513b22d71263" />
+
 
 
 
