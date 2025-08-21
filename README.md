@@ -21,7 +21,7 @@ This project implements a serverless, event-driven ELT data pipeline on AWS for 
 
 ### 1. Clone the Repository  
 ```bash
-git clone https://github.com/yourusername/reddit-aws-pipeline.git
+git clone https://github.com/luluna02/AWS-reddit-data-pipeline.git
 cd reddit-aws-pipeline
 ```
 ### 2. Configure AWS CLI
